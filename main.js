@@ -33,7 +33,6 @@ var dots = $('.dot');
 var slideIdx = 0;
 
 function showSlides() {
-    // debugger
     for (var i = 0; i < projects.length; i++) {
         projects[i].style.display = "none";
     }
@@ -53,10 +52,14 @@ showSlides();
 
 // Manual slideshow
 function nextSlide(n) {
+    // next clicks
     var nextIdx = slideIdx + n;
-    if (nextIdx < 6 && nextIdx > 0) {
-        thisSlide(nextIdx);
+    // previous clicks
+    if (n < 0) {
+        nextIdx = slideIdx + projects.length + n;
     }
+
+    thisSlide(nextIdx)
 }
 
 function thisSlide(num) {
@@ -66,7 +69,7 @@ function thisSlide(num) {
     for (var i = 0; i < dots.length; i++) {
         dots[i].className = 'dot';
     }
-    // debugger
+
     slideIdx = num % 4;
     projects[slideIdx].style.display = "block";
     dots[slideIdx].className += ' active';
