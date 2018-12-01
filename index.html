@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"> -->
+    <script defer src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ================================================ -->
+    <!-- NAVBAR -->
+    <section class="navwrapper">
+        <nav class="totalNavBar">
+            <div class="logo">
+                <a class="pic" href="#"><img src="images/vault76.jpg" alt="myLogoHere"></a>
+            </div>
+
+            <div class="nav-right">
+                <div class="links">
+                    <a href="#">Skills</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="burger-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="burger-menu">
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Testimonials</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- ================================================ -->
+    <!-- HERO IMAGE -->
+    <section class="hero-image">
+        <img class="falloutImg" src="images/fallouthelmet.jpg" alt="Hero Image">
+        <div class="headline">
+            <p>Welcome to my Portfolio!</p>
+        </div>
+    </section>
+    
+    <!-- ================================================ -->
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>MY SKILLS</h2>
+        <div class="current-skills">
+            <h3><strong>CURRENTLY: </strong></h3>
+            JAVASCRIPT | JQUERY | RUBY ON RAILS | POSTGRESQL | HTMLS5 | CSS3 | GIT
+        </div>
+        <div class="coming-soon">
+            <h3><strong>COMING SOON: </strong></h3>
+            REACT.JS | NODE.JS | MONGODB | ACTIVE ADMIN | EXPRESS | RESTFUL API | AXIOS | EJS | JSX | JWT | PASSPORT | BCRYPT | AMAZON S3 | SEMANTIC-UI-CSS | SEMANTIC-UI-REACT | BOOTSTRAP | BULMA | WORDPRESS | HEROKU
+        </div>
+    </section>
+
+    <!-- ================================================ -->
+    <!-- PROJECTS CAROUSEL -->
+    <section class="slideshow-header">
+        <div class="slideshow-title">
+            LOOk at my projects!
+        </div>
+    </section>
+    <section class="slideshow-container">
+        <div class="project fade">
+            <img src="images/enjoyYourStay.jpg" alt="Project 1 Image">
+            <div class="projectText">
+                This is where I would put a description of this project
+            </div>
+            <div class="slideNo">
+                This is where I would put the technologies used
+            </div>
+        </div>
+        <div class="project fade">
+            <img src="images/Fallout 4.jpg" alt="Project 2 Image">
+            <div class="projectText">This is my 2nd BEST project!</div>
+            <div class="slideNo">2/4</div>
+        </div>
+        <div class="project fade">
+            <img src="images/plsStandBy.jpg" alt="Project 3 Image">
+            <div class="projectText">This is my 3rd BEST project!</div>
+            <div class="slideNo">3/4</div>
+        </div>
+        <div class="project fade">
+            <img src="images/Fallout_Vault_Boy-189776.jpg" alt="Project 4 Image">
+            <div class="projectText">This is my 4th BEST project!</div>
+            <div class="slideNo">4/4</div>
+        </div>
+
+        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095;</a>
+    </section>
+    <section class="slideshow-dots">
+        <span class="dot" id="one"></span>
+        <span class="dot" id="two"></span>
+        <span class="dot" id="three"></span>
+        <span class="dot" id="four"></span>
+    </section>
+    <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+    </div> -->
+
+</body>
+</html>

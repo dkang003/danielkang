@@ -1,0 +1,347 @@
+/* GOOGLE FONT */
+/* font-family: 'Ubuntu', sans-serif; */
+/* =========================================================== */
+
+/* LOCAL FALLOUT FONTS */
+
+/* =========================================================== */
+@font-face {
+    font-family: Overseer;
+    src: url("fonts/Overseer.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Overseer;
+    font-weight: bold;
+    src: url("fonts/Overseer\ Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Overseer;
+    font-style: italic;
+    src: url("fonts/Overseer\ Italic.otf") format("opentype");
+}
+
+/* =========================================================== */
+
+/* CSS START */
+
+/* =========================================================== */
+body { 
+    /* This makes the navbar flush!!!!!! */
+    margin: 0;
+    font-family: Overseer, sans-serif;
+    /* font-style: italic; */
+    /* background-color: #82a7d6; */
+    background-color: #325886;
+}
+
+/* =========================================================== */
+
+/* NAVBAR */
+
+/* =========================================================== */
+.burger-lines span {
+    display: none;
+}
+
+.pic img {
+    max-height: 5em;
+}
+
+.totalNavBar {
+    display: flex;
+    flex-direction: row;
+    max-height: 5em;
+    background-color: #325886;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* background-color: #447ab9; */
+    /* background-color: #82a7d6; */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fef265;
+    /* border: solid 1px #82a7d6; */
+    margin: 0 0.5em;
+    /* padding: 0.75em; */
+}
+
+.links a:hover {
+    /* background-color: #fef265; */
+    border-bottom: 1px solid #1bff80;
+    color: #1bff80;
+}
+
+
+/* =========================================================== */
+
+/* DROPDOWN MENU FROM BURGER */
+
+/* =========================================================== */
+.burger-menu {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    float: right;
+    position: relative;
+    background-color: #447ab9;
+}
+
+.burger-menu a {
+    text-align: center;
+    text-decoration: none;
+    color: #fef265;
+    background-color: #447ab9;
+    margin: 0.15em 0em;
+    /* padding: 0.15em 0; */
+}
+
+.burger-menu a:hover {
+    border-bottom: 1px solid #fef265;
+    color: #82a7d6;
+}
+
+
+/* =========================================================== */
+
+/* HERO */
+
+/* =========================================================== */
+.hero-image {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 1em;
+}
+
+.falloutImg{
+    width: 100%;
+    height: auto;
+}
+
+.headline p {
+    position: absolute;
+    /* color: #1bff80; */
+    color: #fef265;
+    font-size: 3.5rem;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+} 
+
+
+
+/* =========================================================== */
+
+/* SKILLS SECTION */
+
+/* =========================================================== */
+.skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 4em auto;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    font-family: Overseer, sans-serif;
+    color: #fef265;
+}
+
+.skills div {
+    width: 70%;   
+}
+
+
+
+
+/* =========================================================== */
+
+/* PROJECT CAROUSEL SECTION */
+
+/* =========================================================== */
+.slideshow-title {
+    font-family: Overseer, sans-serif;
+    font-size: 3em;
+    color: #fef265;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* container holding each project */
+.project {
+    display: none;
+}
+
+.project img {
+    width: 100%;
+    height: 660px;
+}
+
+/* project description */
+.projectText {
+    font-family: Overseer, sans-serif;
+    font-size: 2em;
+    color: #fef265;
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    width: auto;
+    left: 40%;
+}
+
+/* Slide Number Text */
+.slideNo {
+    font-family: Overseer, sans-serif;
+    font-size: 1em;
+    color: #fef265;
+    position: absolute;
+    display: block;
+    left: 49%;
+    bottom: 2%;
+}
+
+/* previous and next buttons */
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    transition: 1s ease;
+    color: #fef265;
+    text-decoration: none;
+    font-family: Overseer, sans-serif;
+    font-size: 3em;
+    padding: 0.25em;
+    border: 1px solid #fef265;
+}
+
+.next {
+    right: 0;
+    border-radius: 20px 5px 5px 20px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 5px 20px 20px 5px;
+}
+
+.prev:hover, .next:hover {
+    color: #1bff80;
+    border: 1px solid #1bff80;
+    background-color: rgba(27,255,128,0.2);
+}
+
+/* slide indicators */
+.slideshow-dots {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dot {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    background-color: #fef265;
+    border-radius: 20%;
+    margin: 0 0.3em;
+}
+
+.active, .dot:hover {
+    background-color: #1bff80;
+}
+
+/* slide animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.2 }
+    to { opacity: 1 }
+}
+
+
+
+/* =========================================================== */
+
+/* MEDIA QUERY */
+
+/* =========================================================== */
+
+@media only screen and (max-width: 900px) {
+/* HIDE THE FULLSCREEN LINKS */
+    .links {
+        display: none;
+    }
+
+/* BURGER ICON & ANIMATION */
+    .burger-lines {
+        margin-right: 3em;
+        margin-bottom: 0.25em;
+        cursor: pointer;
+    }
+    
+    .burger-lines span {
+        display: block;
+        position: relative;
+        width: 2em;
+        height: 2px;
+        background: #fef265;
+        margin-top: 8px;
+        transition: 1s;
+    }
+
+    .burger-lines span:nth-child(1) {
+        transform-origin: left;
+    }
+
+    .burger-lines span:nth-child(2) {
+        transform-origin: center;
+    }
+
+    .burger-lines span:nth-child(3) {
+        transform-origin: left;
+    }
+
+    .burger-lines.active span:nth-child(1) {
+        transform: rotate(45deg);
+        left: 2px;
+        bottom: 1px;
+    }
+
+    .burger-lines.active span:nth-child(2) {
+        transform: rotate(315deg);
+        right: 2px;
+    }
+
+    .burger-lines.active span:nth-child(3) {
+        transform: scaleX(0);
+    } 
+
+}
